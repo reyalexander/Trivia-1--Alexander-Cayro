@@ -74,3 +74,25 @@ while x <= num_fil:
     y = y + 1
   x = x + 1
   print("")
+
+'''----------------Operadores Matematicos------------'''
+#Ejercicio 7 y 8
+#Ingrese dos numeros y el operador y realice la operacion
+#Validar que solo reconozca los operadores matematicos
+
+num1 = int(input("Ingrese primer numero: "))
+num2 = int(input("Ingrese segundo numero: "))
+ope = input("Ingrese el operador que desee (+,-,*,/): ")
+while ope not in ("+","-","*","/"):
+  ope = input("Ingrese uno de estos operadores (+,-,*,/): ")
+
+if ope == "+":
+    resultado = num1 + num2
+elif ope == "-":
+    resultado = num1 - num2
+elif ope == "*":
+    resultado = num1 * num2
+else:
+    resultado = num1 / num2
+
+print("Resultado: ", resultado)
